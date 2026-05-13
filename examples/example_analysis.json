@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-13T00:00:00Z",
+    "method": "regression",
+    "data_source": "example_sales.csv"
+  },
+  "statistics": {
+    "r_squared": 0.89,
+    "p_value": 0.0001,
+    "confidence_interval": [0.85, 0.93],
+    "coefficients": {
+      "marketing_spend": 2.3,
+      "seasonality": 0.45,
+      "base": 1000
+    }
+  },
+  "predictions": {
+    "next_30_days": [
+      {"date": "2026-05-14", "predicted": 15200},
+      {"date": "2026-05-15", "predicted": 15800},
+      {"date": "2026-05-16", "predicted": 16100}
+    ]
+  },
+  "insights": [
+    "Marketing spend has strong positive correlation with sales (r=0.89)",
+    "Seasonal peak expected in Q4",
+    "Recommended marketing budget: $5,000/month for optimal ROI"
+  ],
+  "recommendations": [
+    "Increase marketing spend by 15% during peak season",
+    "Monitor weekly to adjust for market changes",
+    "Consider A/B testing on campaign channels"
+  ],
+  "visualizations": [
+    "charts/sales_trend.html",
+    "charts/regression_analysis.png"
+  ]
+}
